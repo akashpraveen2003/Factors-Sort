@@ -40,17 +40,17 @@ public class Factors_Sort {
 				{
 					return 1;
 				}
-				else if(factors(o1)<factors(o2))			// Check if o1 has less factors
+				else if(factors(o1)<factors(o2))		// Check if o1 has less factors
 				{
 					return -1;
 				}
-				else										// Both o1 and o2 have equal number of factors
+				else						// Both o1 and o2 have equal number of factors
 				{
-					return o1.compareTo(o2);				// Return lexographically (ascending ) Eg: 2 (1,2) and 3 (1,3)  have 2 factors
-				}											// So, we compare them and it returns -1, so dont swap cause it is in ascending, so we return -1
+					return o1.compareTo(o2);		// Return lexographically (ascending ) Eg: 2 (1,2) and 3 (1,3)  have 2 factors
+				}						// So, we compare them and it returns -1, so dont swap cause it is in ascending, so we return -1
             }
 
-			private int factors(String o1) {				// returns the number of factors
+			private int factors(String o1) {			// returns the number of factors
 				int number=Integer.parseInt(o1);
 			 	int count=0;
 				for(int i=1;i*i<=number;i++)
@@ -77,7 +77,7 @@ public class Factors_Sort {
 		Scanner scanner=new Scanner(System.in);
 		int n=scanner.nextInt();
 		scanner.nextLine();
-		String array[]=new String[n];					// implementing in string would be easier
+		String array[]=new String[n];				// implementing in string would be easier
 		for(int i=0;i<n;i++)
 		{
 			array[i]=scanner.nextLine();
